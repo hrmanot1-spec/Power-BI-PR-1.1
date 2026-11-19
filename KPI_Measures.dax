@@ -1,0 +1,16 @@
+-- Create these measures on the cleaned table named Sales.
+Total Sales = SUM(Sales[Sales])
+
+Total Profit = SUM(Sales[Profit])
+
+Total Quantity = SUM(Sales[Quantity])
+
+Average Discount = AVERAGE(Sales[Discount])
+
+-- Add this calculated column if you split Order ID in Power Query:
+Order ID Key = Sales[Order Prefix] & "-" & FORMAT(Sales[Order Year Code], "0") & "-" & Sales[Order Number]
+
+-- Optional supporting measure:
+Total Orders = DISTINCTCOUNT(Sales[Order ID Key])
+
+Profit Margin = DIVIDE([Total Profit], [Total Sales], 0)

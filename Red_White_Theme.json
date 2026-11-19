@@ -1,0 +1,14 @@
+{
+  "name": "Red White Skill Education",
+  "dataColors": [
+    "#C00000",
+    "#4A4A4A",
+    "#8C8C8C",
+    "#D96C6C",
+    "#7F7F7F",
+    "#A6A6A6"
+  ],
+  "background": "#F5F5F5",
+  "foreground": "#262626",
+  "tableAccent": "#C00000"
+}
